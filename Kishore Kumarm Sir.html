@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style1.css"/>
+    <title>Faculty Details</title>
+    <style>
+        /* Add some basic CSS styles for better presentation */
+        body {
+            background-image: linear-gradient(rgba(121, 183, 210, 0.265), rgba(121, 183, 210, 0.342)), url('img3.jpeg');
+            background-size: cover;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .faculty-details-container {
+            width: 80%;
+            max-width: 800px;
+            background-color: rgba(88, 193, 212, 0.79);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .faculty-details h1 {
+            text-align: center;
+            background-color: rgba(76, 184, 214, 0.801);
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+        }
+        .details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .details div {
+            width: 48%; /* Adjust the width as needed */
+        }
+        .details h4 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="faculty-details-container">
+        <h1>Mr.B.Kishore Kumar</h1>
+        <div class="details">
+            <div>
+                <h4>Designation:</h4>
+                <h4>Qualification:</h4>
+                <h4>Date of Joining:</h4>
+                <h4>Phone:</h4>
+                <h4>Email:</h4>
+            </div>
+            <div>
+                <h4>Assistant professor</h4>
+                <h4>M.TECH</h4>
+                <h4>06-04-2023</h4>
+                <h4>6303479097</h4>
+                <h4>kishorekumar.b@bvrithyderabad.edu.in</h4>
+               
+            </div>
+        </div>
+        <div class="semester-button">
+            <button onclick="navigateToSemester()">2023-2022</button>
+        </div>
+        <div class="semester-button">
+            <button onclick="navigateToSemester()">2022-2021</button>
+        </div>
+        <div class="semester-button">
+            <button onclick="navigateToSemester()">2020-2021</button>
+        </div>
+    </div>
+
+    <script>
+        function navigateToSemester() {
+            // You can add logic to navigate to the semester page or perform other actions
+            alert("Navigating to Semester Page");
+        }
+    </script>
+</body>
+</html>
