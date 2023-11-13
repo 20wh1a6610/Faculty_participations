@@ -1,0 +1,56 @@
+
+        body {
+            background-image: linear-gradient(rgba(121, 183, 210, 0.265), rgba(121, 183, 210, 0.342)), url('img3.jpeg');
+            background-size: cover;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .faculty-details-container {
+            width: 80%;
+            max-width: 800px;
+            background-color: rgba(160, 182, 181, 0.889);
+            border: 2px solid rgba(100, 114, 113, 0.889);
+            border-radius: 20px;
+            padding: 20px;
+        }
+        .faculty-details h1 {
+            text-align: center;
+            background-color: rgba(76, 184, 214, 0.801);
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+        }
+        .details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .details div {
+            width: 48%; /* Adjust the width as needed */
+        }
+        .details h4 {
+            margin: 0;
+        }
+        .semester-button {
+            /* text-align: center; */
+            margin-top: 10px;
+        }  
+        .semester-button button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: rgba(66, 76, 76, 0.768); 
+            color:rgba(207, 234, 232, 0.889);;
+            border: 2px solid rgba(100, 114, 113, 0.889);
+         
+            /* border: none; */
+            border-radius: 50px; /* Set border-radius to 50% for an oval shape */
+            width: 120px; /* Set a specific width for the button */
+        }
+    
