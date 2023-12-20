@@ -1,0 +1,24 @@
+<!-- faculty_details.php -->
+
+<?php
+// Include your database connection file
+include('db_connection.php');
+
+// Fetch all distinct faculty names from the faculty_certifications table
+$sqlDistinctNames = "SELECT DISTINCT Faculty_Fame FROM faculty_details";
+$resultDistinctNames = $conn->query($sqlDistinctNames);
+
+if ($resultDistinctNames->num_rows > 0) {
+    while ($rowName = $resultDistinctNames->fetch_assoc()) {
+        $faculty_name = $rowName['Faculty_Name'];
+
+        // Generate a link to the faculty_certifications.php page for each faculty name
+        echo '<a href="semester.php?faculty_name=' . urlencode($faculty_name) . '">' . $faculty_name . '</a><br>';
+    }
+} else {
+    echo '<p>No faculty names found in the database.</p>';
+}
+
+// Close the database connection
+$conn->close();
+?>
